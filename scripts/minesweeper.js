@@ -123,7 +123,6 @@ function startGame()
             tile = document.createElement("div");
             tile.id = i.toString() + "-" + j.toString();
             addClass(tile, "w3-light-green");
-            addClass(tile, "w3-text-light-green");
             addClass(tile, "w3-border");
             addClass(tile, "w3-border-cyan");
             addClass(tile, "w3-cell");
@@ -186,14 +185,12 @@ function tileClicked()
         if(tile.innerHTML == "&nbsp;")
         {
             tile.innerHTML = "🚩";
-            removeClass(tile, "w3-text-light-green");
             flagsPlaced--;
             updateFlagNumber(flagsPlaced);
         }
         else if(tile.innerHTML == "🚩")
         {
             tile.innerHTML = "&nbsp;";
-            addClass(tile, "w3-text-light-green");
             flagsPlaced++;
             updateFlagNumber(flagsPlaced);
         }
