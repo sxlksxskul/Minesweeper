@@ -314,8 +314,6 @@ function checkMine(row, column)
     }
 
     removeClass(clickedTile, "w3-light-green");
-    removeClass(clickedTile, "w3-text-light-green");
-    addClass(clickedTile, "w3-text-green");
     addClass(clickedTile, "w3-green");
 
     tilesClicked++;
