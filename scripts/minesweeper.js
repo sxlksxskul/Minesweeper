@@ -158,6 +158,7 @@ function borderCell()
  * 4) If the tile contains a mine, the game ends and the player is informed. All of the mines in the play area are shown using the showMines() function
  * 5) If the game ended, none of the tiles can be clicked on, as well as the flag button
  * 6) If none of the above happens, then the checkMine() function is called
+ * 7) If all of the tiles that do not contain bombs are clicked, the win() function is called and the game ends
  * @returns nothing, return is just used to exit out of the function in some cases
  */
 function tileClicked()
