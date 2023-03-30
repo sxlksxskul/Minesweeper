@@ -432,6 +432,7 @@ function win()
     gameOver = true;
     $("boardText").innerHTML = "All Mines Cleared!!!";
     addClass($("boardText"), "w3-text-teal");
+    $("flagButton").removeEventListener("click", flagClicked);
     alert("Congratulations, you won!\n Please reload the page if you wish to play again.");
 }
 
